@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form autocomplete="off" action="file.php" method="POST">
+        <h4>General Details</h4>
+        
+        <div>
+            <label for="username">username: </label> <br>
+            <input type="text" name="username" placeholder="enter a username" value="ghoshsuman" disabled>
+        </div>
+
+        <div>
+            <label for="fullname">fullname: </label> <br>
+            <input type="text" name="fname" size="10" maxlength="10" required >
+        </div>
+
+        <div>
+            <label for="phoneNum">phone number: </label> <br>
+            <input type="tel" name="number" pattern="\d{5}([- ]*)\d{6}" required>
+        </div>
+
+        <div>
+            <label for="email">email: </label> <br>
+            <input type="email" name="email">
+        </div>
+
+        <div>
+            <label for="password">password: </label> <br>
+            <input type="password" name="password"> <br> <br>
+        </div>
+
+        <div>
+            <label for="gender">gender: </label> <br>
+            Male: <input type="radio" name="gender" checked> <br>
+            Female: <input type="radio" name="gender"> <br> <br>
+        </div>
+
+        <div>
+            <label for="gender">subjects: </label> <br>
+            html: <input type="checkbox" name="html" checked> <br>
+            css: <input type="checkbox" name="css"> <br>
+            js: <input type="checkbox" name="js"> <br> <br>
+        </div>
+
+        <div>
+            <label for="subject">Choose a subject: </label>
+            <select name="subject">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="js ">js </option>
+
+            </select>
+            
+        </div>
+        <div>
+            <label for="">Address: </label> <br>
+            <textarea name="text"  cols="30" rows="10"></textarea>
+        </div>
+        <ul>
+            <li> <a href="https://github.com/ghoshsuman845">Github</a></li>
+        </ul>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset" disabled>
+        </div>
+
+
+
+    </form>
+    
+</body>
+</html>
