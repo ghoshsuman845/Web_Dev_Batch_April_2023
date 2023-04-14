@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Page</title>
+  </head>
+  <body>
+    <!-- navbar section -->
+    <header>
+      <ul style="list-style-type: none">
+        <li>
+          <a href="./index.html">About </a>
+        </li>
+        <li>
+          <a href="#project">Project</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- main content -->
+    <main>
+      <section id="about">
+        <h3 align="center">About Me</h3>
+        <p>
+          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p>
+          <p>
+          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p>
+          <p>
+          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p>
+          <p>
+          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p>
+      </section>
+      <section id="contact">
+        <h3 align="center">Contact Me</h3>
+        <form action="./script.js" method="POST">
+            <div>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" placeholder="type your name" name="name" value="suman" required maxlength="50" >
+            </div>
+            <br>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="100" rows="5"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <label for="tel">Phone No.</label>
+                <input type="tel" value="6526309880" pattern="\d{5}([- ]*)\d{6}" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="date-time">Date and Time of appointment</label>
+                <input type="datetime-local">
+            </div>
+
+            <div>
+                <label for="contact-type">Contact via call or whatsapp?</label>
+                <label for="call">Call: </label>
+                <input type="radio" name="contact-type" value="call">
+
+                <label for="wtsp">Whatsapp: </label>
+                <input type="radio" name="contact-type" value="wtsp">
+            </div>
+            <br>
+
+            <div>
+                <label for="time-slot">Time Slot:</label>
+                <label for="11-12">11am-12pm</label>
+                <input type="checkbox">
+
+                <label for="4-5">4pm-5pm</label>
+                <input type="checkbox">
+
+                <label for="12-11">11pm-12am</label>
+                <input type="checkbox">
+            </div>
+            <br>
+
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+      </section>
+      <section id="project">
+        <h3 align="center">Project</h3>
+        <table border="1" cellspacing="0" align="center">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>description</th>
+                <th>project link</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>notes app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>tasks app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+             <tr>
+                <td>1</td>
+                <td>notes app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>tasks app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+             <tr>
+                <td>1</td>
+                <td>notes app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>tasks app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+             <tr>
+                <td>1</td>
+                <td>notes app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>tasks app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+             <tr>
+                <td>1</td>
+                <td>notes app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>tasks app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+             <tr>
+                <td>1</td>
+                <td>notes app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>tasks app</td>
+                <td>this contains notes app, wherein you can add, remove, edit your notes</td>
+                <td><a href="https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023">https://github.com/ghoshsuman845/Web_Dev_Batch_April_2023</a></td>
+            </tr>
+        </table>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <h3 align="center">You can also connect with me on:</h3>
+        <div align="center">
+            <a href="#" target="_blank">gmail</a>
+            <a href="#" target="_blank">github</a>
+            <a href="#" target="_blank">linkedin</a>
+        </div>
+
+
+    </footer>
+  </body>
+</html>
