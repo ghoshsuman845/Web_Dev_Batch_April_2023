@@ -1,0 +1,52 @@
+/* Syntax => any_selector:psuedo-class */
+
+a{
+    color: red;
+}
+
+/* :link => it selects all the unvisited links */
+a:link{
+    color: pink;
+}
+
+/* :visited =>  selects all the visited links */
+
+a:visited{
+    color: lightblue;
+}
+
+/* :hover => adds styles when you move your cursor over particular element */
+a:hover{
+    color: lightcoral;
+}
+
+/* :active => selects all active links */
+
+a:active{
+    color: blueviolet;
+}
+
+/* used to select an element that is focus on(used with input tags only) */
+input:focus{
+   background-color: lightblue;
+}
+
+.btn{
+    border: 5px solid green;
+    border-radius: 10px;
+    padding: 10px 22px;
+    width: 20%;
+    font-size: 16px;
+    color: green;
+    background-color: lightgreen;
+}
+
+.btn:hover{
+    background-color: white;
+    border: 5px solid greenyellow;
+    color: greenyellow;
+}
+
+.container p:nth-child(2n+1):hover{
+    color: lightblue;
+}

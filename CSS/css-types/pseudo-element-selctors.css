@@ -1,0 +1,21 @@
+/* used to style specified parts of an element */
+/* syntax: 
+selector::pseudo-element{} */
+
+.para-1::first-line{
+    color: greenyellow;
+}
+
+.para-1::first-letter{
+    color: green;
+}
+
+.para-1::after{
+    content: "hey there this is present inside after psuedo-element";
+    color: red;
+}
+
+.para-1::before{
+    content: url(./free.png);
+    
+}
