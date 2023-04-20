@@ -1,0 +1,64 @@
+
+
+/* id selector : 100 */
+#para-1{
+    /* !important : 10000 */
+    color: pink!important; 
+}
+
+/* class, pseudo-class, attribute selectors : 10 */
+
+.para{
+    font-size: 25px;
+    color: blue;
+}
+
+p:hover{
+    color: black;
+    cursor: pointer;
+}
+
+[type="text"]{
+    border: 1px solid purple;
+}
+
+/* tags and pseudo-element selector : 1 */
+input{
+    border: 1px solid blue;
+}
+
+.section{
+    color: lightblue;
+}
+
+section{
+    color: pink;
+}
+
+
+p{
+    font-size: 20px;
+    color: red;
+}
+
+::marker{
+    color: red;
+    text-align: end!important;
+}
+
+/* Universal selecter (*) : no specificity(0) */
+*{
+    /* color: green; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
