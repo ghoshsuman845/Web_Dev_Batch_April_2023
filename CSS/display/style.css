@@ -1,0 +1,10 @@
+div{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+span{
+    /* display: none; */
+    visibility: hidden;
+}

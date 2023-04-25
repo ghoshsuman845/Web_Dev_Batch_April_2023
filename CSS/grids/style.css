@@ -1,0 +1,27 @@
+
+.container{
+    width: 90%;
+    height: 400px;
+    background-color: lightblue;
+    display: grid;
+    /* repeat(no. of col, width of each col) */
+    grid-template-columns: repeat(4,20%);
+    /* repeat(no. of rows, height of each row) */
+    /* grid-template-rows: repeat(3,250px); */
+    /* column-gap: 4px;
+    row-gap: 5px; */
+    /* gap: row-gap column gap */
+    gap: 10px 12px;
+    /* justify-items: stretch;
+    align-items: stretch; */
+    /* place-items: align-items justify-items; */
+    place-items: center start;
+    justify-content: center;
+    align-content: center;
+}
+
+.container .item {
+    width: 20%;
+    background-color: blue;
+    color: white;
+}
