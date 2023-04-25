@@ -115,7 +115,7 @@ table, thead{
 }
 
 td, th{
-    border: 2px solid #FCAF02;
+    border-left: 2px solid #FCAF02;
 }
 
 tfoot td{
