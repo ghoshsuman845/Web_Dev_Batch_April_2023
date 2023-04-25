@@ -102,3 +102,34 @@ form{
     color: #FCAF02;
     font-size: 17px;
 }
+
+.table{
+    color: #FCAF02;
+    font-size: 17px;
+    padding-bottom: 60px;
+    
+}
+table, thead{
+    width: 100%;
+    border: 2px solid #FCAF02;
+}
+
+td, th{
+    border: 2px solid #FCAF02;
+}
+
+tfoot td{
+    border: 2px solid #000000;
+}
+
+table, tr, td, th{
+    padding: 25px;
+    border-collapse: collapse;
+}
+
+tfoot{
+    color: #000000;
+    background-color: #FCAF02;
+    border: 2px solid #000000;
+}
+
