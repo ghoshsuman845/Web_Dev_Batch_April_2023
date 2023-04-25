@@ -1,0 +1,52 @@
+/* it's a CSS property that controls the stacking order of overlapping elements on a web page. */
+/* works only with position property (except static value) */
+html{
+    font-size: 10px;
+}
+
+body{
+    /* 1.2 * 16px = 19.2px */
+    /* font-size: 1.2em;   */
+    /* 80/100 * 16px = 12.8px */
+    /* font-size: 80%; */
+    /* 1.4 * 16px = 22.4px */
+    font-size: 1.4rem;
+}
+
+div{
+
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    /* 2 * 19.2px = 38.4px */
+    /* font-size: 2em; */
+    /* 90/100 * 12.8px = 11.52px */
+    /* font-size: 90%; */
+    /* 1.2 * 16px = 19.2px */
+    font-size: 1.2rem;
+    width: 100vw;
+
+}
+
+.red{
+    background-color: red;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+.green{
+    background-color: green;
+    top: 40px;
+    left: 40px;
+    z-index: 0;
+}
+.blue{
+    background-color: blue;
+    top: 60px;
+    left: 60px;
+    z-index: 0;
+}
+.yellow{
+    z-index: 0;
+    background-color: yellow;
+}

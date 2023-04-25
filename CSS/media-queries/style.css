@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;  
+    color: black;
+    
+}
+
+.item{
+   width: 50%;
+   height: 50vh;
+   border: 1px solid black;
+   font-size: 40px;
+}
+
+
+/* smaller screens */
+@media screen  and (max-width:480px){
+    .container{
+        flex-direction: column;
+        background-color: lightblue;
+        color: blue;
+    }
+    
+}
+
+/* tablets and larger phones */
+@media screen and (min-width:481px)  and (max-width:768px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: lightgreen;
+        color: green;
+    }
+    .item{
+        width: 20%;
+    }
+    
+}
+
+/* laptops, larger tablets, desktops */
+
+@media screen and (min-width:769px)  and (max-width:1279px) {
+    .container{
+        background-color: plum;
+        color: violet;
+    }
+    
+}
