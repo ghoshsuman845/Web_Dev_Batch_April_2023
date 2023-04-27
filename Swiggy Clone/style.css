@@ -1,27 +1,28 @@
 *{
-    font-family: 'Mulish', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Mulish', sans-serif;
 }
 
 /* navbar section */
-
 .navbar{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
     height: 80px;
+    background-color: #fff;
+    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
     padding: 0 20px;
+    z-index: 100;
+    width: 100%;
 }
 
 .navbar .nav{
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
     height: 80px;
 }
 
@@ -35,6 +36,8 @@
     font-size: 14px;
     max-width: 300px;
     cursor: pointer;
+
+    
 }
 
 .location-div .other{
@@ -45,11 +48,9 @@
 }
 
 .location-div .other:hover{
-    color: #fc8019;
     border-bottom: 2px solid #fc8019;
-
+    color: #fc8019;
 }
-
 .location-div .location{
     font-weight: 300;
     color: #686b78;
@@ -60,7 +61,201 @@
     color: #fc8019;
 }
 
-.nav-right .items{
+.nav-right{
     display: flex;
     align-items: center;
+}
+.nav-right .items{
+    display: flex;
+}
+
+.items li{
+    font-weight: 500;
+    list-style-type: none;
+    font-size: 16px;
+    
+    margin-right: 36px;
+}
+
+.items li .nav-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    column-gap: 10px;
+    color: #3d4152;
+}
+
+/* main content section */
+
+.content-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 125px;
+    left: 20px;
+
+}
+
+.container .item-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.item-bar .numbers{
+    font-weight: 700;
+    font-size: 28px;
+    color: #3d4152;
+}
+
+.item-bar .filters{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: #686b78;
+    gap: 35px;
+}
+
+.restaurant-list{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-bottom: 85px;
+    margin-top: 40px;
+    row-gap: 40px;
+}
+
+.place .place-link{
+    text-decoration: none;
+    background-color: #fff;
+    color: #3d4152;
+}
+
+.place-link .list-item{
+    padding: 25px;
+    border: 1px solid #fff;
+}
+
+.place-link .list-item:hover{
+    border: 1px solid #d3d5df;
+    box-shadow: 0px 4px 7px 0px rgba(218 220 230 / 60%);
+}
+
+.item-content{
+    position: relative;
+}
+
+.status{
+    position: absolute;
+    top: 0px;
+    background-color: rgb(58, 60, 65);
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 5px 9px;
+    left: -8px;
+    border-color: rgb(30, 32, 35) transparent;
+}
+
+.status:before {
+    position: absolute;
+    bottom: -9px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: inherit;
+    left: 0;
+    border-width: 9px 0 0 9px;
+}
+
+.place-name-div{
+    margin-top: 14px;
+}
+
+.place-name-div .name {
+  font-size: 17px;
+  font-weight: 500;
+  /* to bring text in next line */
+  word-break: break-word;
+}
+
+.place-name-div .food-items {
+  color: #686b78;
+  font-size: 13px;
+  margin-top: 4px;
+  font-weight: 300;
+}
+
+.info-div{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 12px;
+    justify-content: space-between;
+    color: #535665;
+    font-weight: 300;
+}
+
+.info-div .rating {
+  background-color: #db7c38;
+  color: #fff;
+  height: 20px;
+  width: 36px;
+  padding: 0 5px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.icon-star {
+  font-size: 10px;
+  margin-right: 4px;
+  position: relative;
+  top: -1px;
+}
+
+.offer-div {
+  border-top: 1px solid #e9e9eb;
+  padding-top: 14px;
+  margin-top: 14px;
+  color: #8a584b;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.offer-div .icon-offer-filled {
+  font-size: 16px;
+  width: 20px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.offer-div .offer-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2px;
+}
+.offer-text .fa-tags {
+  margin-right: 2px;
+}
+
+.place .quick-view{
+    visibility: hidden;
+    font-size: 13px;
+    border-top: 1px solid #e9e9eb;
+    padding-top: 14px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.place:hover .quick-view{
+    visibility: visible;
+}
+
+.quick-view .view-btn{
+    color: #5d8ed5;
+    text-transform: uppercase;
+    font-weight: 600;
 }
