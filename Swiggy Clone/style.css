@@ -259,3 +259,96 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+
+@media screen and (min-width:320px) and (max-width: 480px) {
+    .navbar{
+        width: 95%;
+    }
+
+    .nav .nav-left{
+        column-gap: 10px;
+    }
+
+    .logo svg{
+        width: 10px;
+    }
+
+    .nav-left .location-div{
+        font-size: 8px;
+    }
+
+    .items li {
+        font-size: 10px;
+        margin-right: 9px;
+    }
+
+    .item-bar .numbers{
+        font-size: 12px;
+    }
+
+    .item-bar .filters{
+        gap: 9px;
+    }
+
+    .filters div{
+        font-size: 9px;
+    }
+
+    .restaurant-list{
+        grid-template-columns: repeat(2, 50%);
+        margin-top: 20px;
+        row-gap: 10px;
+    }
+
+    .place-link .list-item{
+        padding: 15px;
+    }
+
+    .container .item-bar{
+        justify-content: space-around;
+    }
+
+    .item-content .top-img img{
+        width: 100%;
+        height: 16vh;
+    }
+
+    .place-name-div .name{
+        font-size: 15px;
+    }
+
+    .place-name-div .food-items{
+        font-size: 12px;
+    }
+    
+    .offer-div .offer-text{
+        font-size: 12px;
+        line-height: 18.2px;
+    }
+
+    .info-div{
+        font-size: 10px;
+    }
+
+    .content-section{
+        padding: 10px;
+        left: 0px;
+        top: 100px;
+    }
+
+    .nav-item svg{
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav-item span{
+        margin-left: -6px;
+    }
+
+    .nav-right .items{
+        align-items: center;
+        font-size: 10px;
+    }
+
+    
+}

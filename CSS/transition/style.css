@@ -1,0 +1,16 @@
+div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightblue;
+    transition-property: width, height;
+    transition-delay: 300ms;
+    transition-duration: 2s ;
+    transition-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+div:hover{
+    width: 300px;
+    height: 300px;
+   
+}
