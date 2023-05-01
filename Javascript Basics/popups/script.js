@@ -25,7 +25,8 @@ console.log( length+ breadth);
 
 // 3.14 + "45" + "45"  = "3.144545"
 var areaOfRect = 2 * (length + breadth); // 2 * dbhjgbs = num * string = NaN
-console.log("area of the rectangle is: ", areaOfRect);
+// console.log("area of the rectangle is: ", areaOfRect);
+console.log(`Area of the rectangle is: ${areaOfRect}`);
 
 
 //confirm: returns a true or false
@@ -33,3 +34,18 @@ console.log("area of the rectangle is: ", areaOfRect);
 // OK => true
 var isClassTomorrow = confirm("Is there any class tomorrow?")
 console.log(isClassTomorrow);
+
+var fName = "suman";
+var sName = "ghosh"
+console.log(`my name is : ${fName} ${sName}`);
+
+var title = null;
+
+if (true) {
+    title = "Hello there!"
+    document.write(title)
+} else {
+    title = "page not found"
+    document.write(title)
+}
+
